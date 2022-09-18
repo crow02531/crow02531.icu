@@ -19,11 +19,10 @@
 # in the templates via {{ site.myvariable }}.
 
 title: crow02531的博客
+url: "https://crow02531.github.io"
+baseurl: ""
 email: crow02531@outlook.com
-description: >- # this means to ignore newlines until "baseurl:"
-  空空如也
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://crow02531.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: crow02531
 
 # Build settings
 theme: minima
