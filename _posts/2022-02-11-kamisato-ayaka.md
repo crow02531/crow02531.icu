@@ -6,4 +6,4 @@ categories: post painting
 ---
 
 ![神里凌华](/assets/paintings/2022-02-11-kamisato-ayaka.jpg "神里凌华")
-神里凌华，仅线稿，临摹自XXX
+神里凌华，仅线稿，临摹自XXX（寻源中...）
