@@ -10,6 +10,7 @@ categories: post
 <div id="gitalk-container"></div>
 <script>
 var gitalk = new Gitalk({
+  proxy: '',
   clientID: 'db747d7ee2d5c9e0fe3d',
   clientSecret: '7fbdb348afce35a33f8c0a1faebfdfffe213d09a',
   repo: 'crow02531.github.io',
