@@ -11,13 +11,14 @@ layout: home
 <div id="gitalk-container"></div>
 <script>
 var gitalk = new Gitalk({
-  clientID: 'GitHub Application Client ID',
-  clientSecret: 'GitHub Application Client Secret',
-  repo: 'GitHub repo',
-  owner: 'GitHub repo owner',
-  admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+  clientID: 'db747d7ee2d5c9e0fe3d',
+  clientSecret: '7fbdb348afce35a33f8c0a1faebfdfffe213d09a',
+  repo: 'crow02531.github.io',
+  owner: 'crow02531',
+  admin: ['crow02531'],
   id: location.pathname,      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
+  distractionFreeMode: false, // Facebook-like distraction free mode
+  language:'zh-CN'
 })
 
 gitalk.render('gitalk-container')
