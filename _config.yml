@@ -23,20 +23,17 @@
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-remote-theme
-
-remote_theme: vszhub/not-pure-poole
 
 
 # Properties
 title: crow02531's blog
-description: wadwadwaaw
+description: hfaiuwhdiusbd
 url: https://crow02531.github.io
 permalink: pretty
-favicon: /assets/icons/favicon.ico
-avatar: /assets/icons/avatar.png
-cover_image: /assets/decorations/bg.png
+#avatar: /assets/icons/avatar.png
+cover_image: /assets/decorations/2022-06-08_22.48.22.png
 paginate: 5
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
