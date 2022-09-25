@@ -18,15 +18,25 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: crow02531的博客
-url: "https://crow02531.github.io"
-email: crow02531@outlook.com
-github_username: crow02531
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-remote-theme
+
+remote_theme: vszhub/not-pure-poole
+
+
+# Properties
+title: crow02531's blog
+description: wadwadwaaw
+url: https://crow02531.github.io
+permalink: pretty
+favicon: /assets/icons/favicon.ico
+avatar: /assets/icons/avatar.png
+cover_image: /assets/decorations/bg.png
+paginate: 5
 
 # Exclude from processing.
 # The following items will not be processed, by default.

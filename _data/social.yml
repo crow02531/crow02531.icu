@@ -1,0 +1,9 @@
+- title: Email
+  url: mailto://crow02531@outlook.com
+  icon: fas fa-envelope
+- title: GitHub
+  url: https://github.com/vszhub/not-pure-poole
+  icon: fab fa-github
+- title: Mcbbs
+  url: https://www.mcbbs.net/?4974372
+  icon: fa-duotone fa-treasure-chest
