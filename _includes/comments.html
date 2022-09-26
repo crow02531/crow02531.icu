@@ -1,22 +1,9 @@
 <div id="comments"></div>
 
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script>
-  try {
-    const gitalk = new Gitalk({
-      clientID: '2c1eb31e6ee971348521',
-      clientSecret: 'c789eb415cce98641c3fb2c7582776aa5fadf58d',
-      repo: 'crow02531.github.io',
-      owner: 'crow02531',
-      admin: ['crow02531'],       // GitHub repo owner and collaborators, only these guys can initialize github issues
-      id: location.pathname,      // Ensure uniqueness and length less than 50
-      distractionFreeMode: false, // Facebook-like distraction free mode
-      proxy: 'https://github.com/login/oauth/access_token'
-    })
-
-    gitalk.render('comments')
-  } catch (err) {
-    document.getElementById('comments').innerHTML = '<font color="#DC143C">评论系统加载失败！请确保Github能够访问。</font>'
-  }
+<script src="https://utteranc.es/client.js"
+        repo="crow02531/crow02531.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>
