@@ -1,6 +1,9 @@
-<div id="comments"></div>
-<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
-<script src="https://billts.site/js/gitment.js"></script>
+<div id="comments">
+  <font color="#FF0000">评论系统加载失败！请确保Github能够访问。</font>
+</div>
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
   const gitment = new Gitment({
     owner: 'crow02531',
@@ -11,5 +14,7 @@
     }
   })
 
-  gitment.render('comments')
+  var elem = document.getElementById('comments')
+  elem.innerHTML = ''
+  gitment.render(elem)
 </script>
