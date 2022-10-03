@@ -27,6 +27,7 @@ plugins:
 
 # Properties
 title: crow02531's blog
+author: crow02531
 description: 笃学敏行，止于至善
 url: https://crow02531.github.io
 permalink: pretty
