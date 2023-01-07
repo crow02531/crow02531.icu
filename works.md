@@ -7,21 +7,15 @@ permalink: /works/
 由于本人写了一半弃坑或发布后完全不管的作品过多，这里只贴出完成度较高且较有意义（可能吧）的项目。
 
 <!--
-## Global Illumination for Minecraft
-
-Minecraft全局光照原理，一本讲述Minecraft中的全局光照应该是怎样的以及该如何实现的书，可以当作光线追踪的入门书（阅读门槛超低，大概）。
-
-[项目链接](/assets/articles/global-illumination-for-minecraft)
-
 ## Algebra
 
-以书的形式书写的学习笔记，线性代数和抽象代数混着讲。
+crow02531的个人工具书，线性代数和抽象代数混着讲。
 
 [项目链接](/assets/articles/algebra/)
 
 ## Calculus
 
-以书的形式书写的学习笔记，主要讲述抽象空间上的测度和积分，同时也把一元微积分、多元微积分作为一种特殊情况讲述。
+crow02531的个人工具书，主要讲述抽象空间上的测度和积分，同时也把一元微积分、多元微积分作为一种特殊情况讲述。
 
 [项目链接](/assets/articles/calculus/)
 -->
