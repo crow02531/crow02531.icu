@@ -35,7 +35,7 @@ mathjax: enable
 **定义**（拓扑空间）任给一个集合$S$，$S$上的一个拓扑$\tau$是$S$的一个子集簇，满足
 1. （空集和$S$是$\tau$中的集合）$\emptyset\in\tau$且$S\in\tau$
 2. （$\tau$中集合的有限交还是$\tau$的集合）诺$V_1,...,V_n\in\tau$，则$\bigcap_{i=1}^n V_i\in\tau$
-3. （$\tau$中集合的无限并还是$\tau$的集合）诺$\{V_{i\in I}\}$是$\tau$中的一簇集合，即对任意$i\in I$，$V_i\in\tau$，那么$\bigcup_{i\in I} V_i\in\tau$
+3. （$\tau$中集合的无限并还是$\tau$的集合）诺$\lbrace V_{i\in I}\rbrace$是$\tau$中的一簇集合，即对任意$i\in I$，$V_i\in\tau$，那么$\bigcup_{i\in I} V_i\in\tau$
 
 我们称二元组$(S,\tau)$是一个拓扑空间，并称$\tau$中的集合为该拓扑空间中的开集
 
@@ -47,7 +47,7 @@ mathjax: enable
 
 度量空间天然地带有拓扑的结构，每一个度量空间都伴随着一个能够自然地体现其性质的拓扑空间，这点现在看上去还不是很明朗，但当我们在度量空间上定义了度量球，并利用度量球定义度量空间中的开集后，这点将变得清晰。
 
-**定义**（度量球）设$(S,d)$是度量空间，$p\in S$是其上一点，$r$是正实数，定义以$p$为中心，$r$为半径的度量球是集合$\{x\in S:d(x,p)<r\}$，记为$B_{(S,d)}(p,r)$
+**定义**（度量球）设$(S,d)$是度量空间，$p\in S$是其上一点，$r$是正实数，定义以$p$为中心，$r$为半径的度量球是集合$\lbrace x\in S:d(x,p)<r\rbrace$，记为$B_{(S,d)}(p,r)$
 
 **注**：诺上下文明确$(S,d)$具体指哪个度量空间，$B_{(S,d)}(p,r)$总是简写成$B(p,r)$
 
@@ -65,7 +65,7 @@ mathjax: enable
 
 **证明**：设$(S,d)$是度量空间，$\tau$是该度量空间中所有开集构成的集合，目标是证明$\tau$是$S$的拓扑。
 
-首先，因为虚真空集$\emptyset$必然是开集，$S$也是开集，因为对任意$p\in S$和$r>0$，$B(p,r)\subseteq S$必然成立，这样就证明了$\emptyset$和$S$是$\tau$中的集合。此外，对任意开集$U$和$V$，任给$p\in U\wedge p\in V$，一定存在$r_1$使得$B(p,r_1)\subseteq U$，$r_2$使得$B(p,r_2)\subseteq V$，可以推断$B(p,min(r_1,r_2))$即是$U$的子集又是$V$的子集，于是$U\cap V\in\tau$是开集，这样就证明了$\tau$中集合的有限交还是$\tau$中的集合。接下来，令$\{V_{i\in I}\}$表示一簇开集，记$U=\bigcup_{i\in I} V_i$，目的是证明$U$亦是开集。对任给的$p\in U$，存在$i\in I$使得$p\in V_i$，同时因为$V_i$是$(S,d)$的开集，所以存在$r$使得$B(p,r)\subseteq V_i$，而$V_i\subseteq U$，于是$B(p,r)\subseteq U$，这就证明了$U$是开集。综上，$\tau$是$S$的拓扑，$(S,\tau)$构成拓扑空间。
+首先，因为虚真空集$\emptyset$必然是开集，$S$也是开集，因为对任意$p\in S$和$r>0$，$B(p,r)\subseteq S$必然成立，这样就证明了$\emptyset$和$S$是$\tau$中的集合。此外，对任意开集$U$和$V$，任给$p\in U\wedge p\in V$，一定存在$r_1$使得$B(p,r_1)\subseteq U$，$r_2$使得$B(p,r_2)\subseteq V$，可以推断$B(p,min(r_1,r_2))$即是$U$的子集又是$V$的子集，于是$U\cap V\in\tau$是开集，这样就证明了$\tau$中集合的有限交还是$\tau$中的集合。接下来，令$\lbrace V_{i\in I}\rbrace$表示一簇开集，记$U=\bigcup_{i\in I} V_i$，目的是证明$U$亦是开集。对任给的$p\in U$，存在$i\in I$使得$p\in V_i$，同时因为$V_i$是$(S,d)$的开集，所以存在$r$使得$B(p,r)\subseteq V_i$，而$V_i\subseteq U$，于是$B(p,r)\subseteq U$，这就证明了$U$是开集。综上，$\tau$是$S$的拓扑，$(S,\tau)$构成拓扑空间。
 
 **例子**（$\mathbb R$上的标准拓扑）令$d$表示$\mathbb R$的标准度量，$\tau$表示度量空间$(\mathbb R,d)$中的所有开集构成的集合，根据前文所述，$\tau$是$\mathbb R$的一个拓扑，称这个拓扑是$\mathbb R$的标准拓扑。
 
