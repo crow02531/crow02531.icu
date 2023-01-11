@@ -24,11 +24,11 @@ mathjax: enable
 
 **例子**（欧几里得度量）设$n\ge 1$是正整数，并设$d:\mathbb R^n\times\mathbb R^n\to\mathbb R$为$d((x_1,...,x_n),(y_1,...,y_n))=\sqrt{(x_1-y_1)^2+...+(x_n-y_n)^2}$，那么$d$是$\mathbb R^n$的度量，称为$\mathbb R^n$的欧几里得度量（或$l^2$度量）.
 
-**例子**（出租车度量）仍设$n\ge 1$是正整数，$d:\mathbb R^n\times\mathbb R^n\to\mathbb R$为$d((x_1,...,x_n),(y_1,...,y_n))=|x_1-y_1|+...+|x_n-y_n|$，那么$d$也是$\mathbb R^n$的度量，称为$\mathbb R^n$的出租车度量（或$l^1$度量）.
+**例子**（出租车度量）仍设$n\ge 1$是正整数，$d:\mathbb R^n\times\mathbb R^n\to\mathbb R$为$d((x_1,...,x_n),(y_1,...,y_n))=\vert x_1-y_1\vert+...+\vert x_n-y_n\vert$，那么$d$也是$\mathbb R^n$的度量，称为$\mathbb R^n$的出租车度量（或$l^1$度量）.
 
 上面对$\mathbb R^n(n=1,2...)$这类集合定义了两种不同的度量，当$n=2$时，令$d_{l^1}$、$d_{l^2}$分别表示$\mathbb R^n$的出租车度量和欧几里得度量，$d_{l^1}((0,0),(2,1))=3$但$d_{l^2}((0,0),(2,1))=\sqrt 5$. 出租车度量之所以叫出租车度量是因为出租车从一点到另一点时，只能沿坐标轴方向（东、南、西、北）行驶而无法走斜线，出租车度量体现了这种性质.
 
-**定义**（$\mathbb R$的标准度量）定义$\mathbb R$上的标准度量$d:\mathbb R\times\mathbb R\to\mathbb R$为$d(x,y)=|x-y|$.
+**定义**（$\mathbb R$的标准度量）定义$\mathbb R$上的标准度量$d:\mathbb R\times\mathbb R\to\mathbb R$为$d(x,y)=\vert x-y\vert$.
 
 容易看出$\mathbb R$的标准度量就是$\mathbb R$的欧几里得度量，同时也是$\mathbb R$的出租车度量. 一般的，当$\mathbb R^n(n=1,2...)$作为度量空间时，如果没有特别指定，使用的度量都是欧几里得度量.
 
@@ -61,7 +61,7 @@ mathjax: enable
 
 度量球是对一般意义下的“球”的概念在度量空间中的推广. 以$p$为中心，$r$为半径的度量球就是空间中所有到$p$的距离小于$r$的点的集合，需要注意的是度量球的半径$r$一定是正数，以$p$为中心的度量球一定包含$p$.
 
-**例子**：令$d_{l^2}$、$d_{l^1}$分别表示$\mathbb R^2$的欧几里得度量和出租车度量. 那么，$B_{(\mathbb R^2,d_{l^2})}((0,0),1)$是以$(0,0)$为圆心，$1$为半径的开的圆盘，$B_{(\mathbb R^2,d_{l^1})}((0,0),1)$则是开的棱形$\lbrace(x,y):|x|+|y|<1\rbrace$.
+**例子**：令$d_{l^2}$、$d_{l^1}$分别表示$\mathbb R^2$的欧几里得度量和出租车度量. 那么，$B_{(\mathbb R^2,d_{l^2})}((0,0),1)$是以$(0,0)$为圆心，$1$为半径的开的圆盘，$B_{(\mathbb R^2,d_{l^1})}((0,0),1)$则是开的棱形$\lbrace(x,y):\vert x\vert+\vert y\vert<1\rbrace$.
 
 **定义**（度量空间中的开集）设$(S,d)$是度量空间，$U\subseteq S$，称集合$U$是开集，当且仅当对任意的$p\in U$，都存在$r>0$，使得$B(p,r)\subseteq U$.
 
