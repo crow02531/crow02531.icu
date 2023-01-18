@@ -44,9 +44,7 @@
     var splash_list = ["{{ site.data.splash | join: '", "' }}"];
 
     function assign_splash(id) {
-      day = Math.ceil(new Date().getTime() / 86400000);
-
-      document.getElementById(id).innerHTML = splash_list[day % splash_list.length];
+      document.getElementById(id).innerHTML = splash_list[Math.floor(Math.random() * splash_list.length)];
     }
 
     assign_splash("splash");
