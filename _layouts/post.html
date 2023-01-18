@@ -4,14 +4,19 @@ layout: default
 
 {%- assign l = site.data.banner | size -%}
 {%- assign i = page.content | size | modulo: l -%}
-{%- assign banner_img = site.data.banner[i] -%}
+{%- assign selected_banner = site.data.banner[i] -%}
 
 <div class="container pure-g">
-  <div class="banner" style="color:white; background-image: url({{ banner_img.url }});">
-    {% include banner.html %}
+  <div class="banner pure-u-1" style="color:white; background-image: url({{ selected_banner.url }});">
+    <div class="banner-title hidden-a">
+      <a href="/">{{ site.title }}</a>
+    </div>
+    <div class="banner-tagline">
+      {{ selected_banner.title }}
+    </div>
   </div>
 
-  <div class="content pure-u-1 pure-u-md-2-3">
+  <div class="content-post pure-u-1 pure-u-md-2-3">
     <article class="post">
       <h1 class="post-title">{{ page.title }}</h1>
       <div class="post-meta">

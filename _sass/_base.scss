@@ -68,3 +68,15 @@ mark {
   background-color: var(--yellow-100);
   border-radius: .125rem;
 }
+
+.hidden-a {
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+  }
+}
