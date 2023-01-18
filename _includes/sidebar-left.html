@@ -13,7 +13,7 @@
     <a href="{{ "/" | relative_url }}" title="Home">{{ site.title }}</a>
   </div>
   <div class="masthead-tagline">
-    <small>{{ site.description }}</small>
+    <small id="splash"></small>
   </div>
   {%- if site.data.navigation -%}
   <nav class="navigation">
@@ -39,4 +39,16 @@
       </ul>
     </div>
   {%- endif %}
+
+  <script>
+    var splash_list = ["{{ site.data.splash | join: '", "' }}"];
+
+    function assign_splash(id) {
+      day = Math.ceil(new Date().getTime() / 86400000);
+
+      document.getElementById(id).innerHTML = splash_list[day % splash_list.length];
+    }
+
+    assign_splash("splash");
+  </script>
 </header>

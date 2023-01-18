@@ -2,52 +2,57 @@
 layout: default
 ---
 
-<article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-meta">
-    {%- assign date_format = site.date_format | default: "%-d %b %Y" -%}
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format }}</time>
-    {%- if page.last_modified_at -%}
-      <span> ~ </span>
-      {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
-      <time datetime="{{ mdate }}" itemprop="dateModified">
-        {{ mdate | date: date_format }}
-      </time>
-    {%- endif -%}
-    {%- if page.author -%}
-      <span> • </span>
-      {% for author in page.author %}
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          {{ author }}
-        </span>
-        {%- if forloop.last == false %}, {% endif -%}
-      {% endfor %}
-    {%- endif -%}
+{%- assign l = site.data.banner | size -%}
+{%- assign i = page.content | size | modulo: l -%}
+{%- assign banner_img = site.data.banner[i] -%}
+
+<div class="container pure-g">
+  <div class="banner" style="color:white; background-image: url({{ banner_img.url }});">
+    {% include banner.html %}
   </div>
 
-  {{ content }}
+  <div class="content pure-u-1 pure-u-md-17-24">
+    <article class="post">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        {%- assign date_format = site.date_format | default: "%-d %b %Y" -%}
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format }}</time>
+        {%- if page.last_modified_at -%}
+          <span> ~ </span>
+          {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
+          <time datetime="{{ mdate }}" itemprop="dateModified">
+            {{ mdate | date: date_format }}
+          </time>
+        {%- endif -%}
+      </div>
 
-  {% if page.tags %}
-    {% include post-tags.html %}
-  {% endif %}
+      {{ content }}
 
-  {% if page.comments != false %}
-    {% include comments.html %}
-  {% endif %}
-</article>
+      {% if page.tags %}
+        {% include post-tags.html %}
+      {% endif %}
 
-{% if site.related_posts != empty %}
-<aside class="related">
-  <h2>Related posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title }}
-          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</aside>
-{% endif %}
+      {% if page.comments != false %}
+        {% include comments.html %}
+      {% endif %}
+    </article>
+
+    {% if site.related_posts != empty %}
+    <aside class="related">
+      <h2>Related posts</h2>
+      <ul class="related-posts">
+        {% for post in site.related_posts limit:3 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title }}
+              <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </aside>
+    {% endif %}
+    
+    {% include footer.html %}
+  </div>
+</div>

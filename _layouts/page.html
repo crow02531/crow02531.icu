@@ -2,8 +2,14 @@
 layout: default
 ---
 
-<article class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  <br>
-  {{ content }}
-</article>
+<div class="container pure-g">
+  <div class="sidebar-left pure-u-1 pure-u-md-1-4" style="color: rgb(255, 255, 255); background-image: url({{ site.cover_image | relative_url }});">
+    {% include sidebar-left.html %}
+  </div>
+
+  <div class="content pure-u-1 pure-u-md-1-2">
+    {{ content }}
+
+    {% include footer.html %}
+  </div>
+</div>
