@@ -11,9 +11,11 @@ layout: default
     <div class="banner-title hidden-a">
       <a href="/">{{ site.title }}</a>
     </div>
-    <div class="banner-tagline">
-      {{ selected_banner.title }}
-    </div>
+    {%- if selected_banner.title -%}
+      <div class="banner-tagline">
+        {{ selected_banner.title }}
+      </div>
+    {%- endif -%}
   </div>
 
   <div class="content-post pure-u-1 pure-u-md-2-3">
@@ -22,42 +24,35 @@ layout: default
       <div class="post-meta">
         {%- assign date_format = site.date_format | default: "%-d %b %Y" -%}
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format }}</time>
-        {%- if page.last_modified_at -%}
-          <span> ~ </span>
-          {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
-          <time datetime="{{ mdate }}" itemprop="dateModified">
-            {{ mdate | date: date_format }}
-          </time>
-        {%- endif -%}
       </div>
 
       {{ content }}
 
-      {% if page.tags %}
-        {% include post-tags.html %}
-      {% endif %}
+      {%- if page.tags -%}
+        {%- include post-tags.html -%}
+      {%- endif -%}
 
-      {% if page.comments != false %}
-        {% include comments.html %}
-      {% endif %}
+      {%- if page.comments != false -%}
+        {%- include comments.html -%}
+      {%- endif -%}
     </article>
 
-    {% if site.related_posts != empty %}
+    {%- if site.related_posts != empty -%}
     <aside class="related">
       <h2>Related posts</h2>
       <ul class="related-posts">
-        {% for post in site.related_posts limit:3 %}
+        {%- for post in site.related_posts limit:3 -%}
           <li>
-            <a href="{{ post.url | relative_url }}">
+            <a href="{{ post.url }}">
               {{ post.title }}
               <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
             </a>
           </li>
-        {% endfor %}
+        {%- endfor -%}
       </ul>
     </aside>
-    {% endif %}
-    
-    {% include footer.html %}
+    {%- endif -%}
+
+    {%- include footer.html -%}
   </div>
 </div>

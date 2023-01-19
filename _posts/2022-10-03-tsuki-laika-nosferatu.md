@@ -2,8 +2,7 @@
 layout: post
 title:  月与莱卡与吸血公主
 date:   2022-10-03 20:22:23 +0800
-last_modified_at: 2022-10-07 23:22:00 +0800
-tags: [gossip]
+tags: gossip
 ---
 
 推荐一本小说，[月与莱卡与吸血公主](https://zh.moegirl.org.cn/zh-hans/月与莱卡与吸血公主)以上世纪美苏太空争霸为蓝本，讲述的是太空与航天人的梦。第一卷绝赞，其他部分也不错（后几卷我还没时间看），小说已完结。

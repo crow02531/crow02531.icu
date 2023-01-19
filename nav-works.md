@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 作品
-permalink: /works/
+permalink: /nav/works/
 ---
 
 # {{ page.title }}

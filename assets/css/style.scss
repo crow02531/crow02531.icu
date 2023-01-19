@@ -1,0 +1,20 @@
+---
+---
+
+@import "variables";
+@import "base";
+@import "type";
+@import "code";
+@import "layout";
+@import "sidebar";
+@import "posts";
+@import "archive";
+@import "home-header";
+@import "pagination";
+@import "message";
+@import "banner";
+
+@import "syntax-light";
+@media (prefers-color-scheme: dark) {
+  @import "syntax-dark";
+}

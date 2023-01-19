@@ -2,9 +2,7 @@
 layout: post
 title:  理解Hodgkin-Huxley模型
 date:   2022-12-27 12:47:45 +0800
-last_modified_at: 2022-12-27 12:47:45 +0800
-tags: [neural-science]
-mathjax: enable
+tags: neural-science
 ---
 
 定性、定量记述神经元的电生理特性。

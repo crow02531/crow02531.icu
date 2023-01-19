@@ -2,8 +2,7 @@
 layout: post
 title:  Arknights（临摹）
 date:   2023-01-17 23:51:10 +0800
-last_modified_at: 2023-01-17 23:51:10 +0800
-tags: [painting]
+tags: painting
 ---
 
 ![Arknights](/assets/paintings/2023-01-17-arknights.jpg "Arknights")

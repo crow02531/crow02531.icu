@@ -27,11 +27,16 @@ plugins:
 # Properties
 title: crow02531's blog
 author: crow02531
-url: https://crow02531.github.io
 permalink: pretty
-avatar: /assets/icons/avatar.png
-cover_image: /assets/screenshots/2022-06-08_22.48.22.png
+avatar: /avatar.ico
+sidebar_image: /assets/screenshots/2022-06-08_22.48.22.png
 paginate: 5
+
+navigation:
+  dates: /nav/dates/
+  tags: /nav/tags/
+  about: /nav/about/
+  works: /nav/works/
 
 
 # Exclude from processing.
