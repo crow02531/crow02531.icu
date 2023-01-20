@@ -4,16 +4,16 @@
       <li class="pure-menu-item">
         <a href="/" class="pure-menu-link {% if paginator %}current-item{% endif %}">主页</a>
       </li>
-      {%- if site.navigation.dates -%}
+      {% if site.navigation.dates %}
         <li class="pure-menu-item">
           <a href="{{ site.navigation.dates }}" class="pure-menu-link {% if page.url == site.navigation.dates %}current-item{% endif %}">日期</a>
         </li>
-      {%- endif -%}
-      {%- if site.navigation.tags -%}
+      {% endif %}
+      {% if site.navigation.tags %}
         <li class="pure-menu-item">
           <a href="{{ site.navigation.tags }}" class="pure-menu-link {% if page.url == site.navigation.tags %}current-item{% endif %}">标签</a>
         </li>
-      {%- endif -%}
+      {% endif %}
     </ul>
   </div>
 </div>

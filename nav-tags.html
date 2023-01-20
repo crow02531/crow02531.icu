@@ -6,34 +6,34 @@ permalink: /nav/tags/
 
 {% include home-header.html %}
 
-{%- assign taxonomies = site.tags | sort -%}
+{% assign taxonomies = site.tags | sort %}
 
 {% comment %} Show taxonomies {% endcomment %}
 <div class="taxonomies-wrapper">
   <ul class="taxonomies">
-    {%- for taxonomy in taxonomies -%}
-      {%- assign slugified_taxonomy_name = taxonomy[0] | slugify -%}
+    {% for taxonomy in taxonomies %}
+      {% assign slugified_taxonomy_name = taxonomy[0] | slugify %}
       <li>
-        {%- capture link -%}{{ page.permalink }}#{{ slugified_taxonomy_name }}{%- endcapture -%}
+        {% capture link %}{{ page.permalink }}#{{ slugified_taxonomy_name }}{% endcapture %}
         <a class="taxonomy" href="{{ link }}">
           <span>{{ slugified_taxonomy_name }}</span>
           <span>{{ taxonomy[1].size }}</span>
         </a>
       </li>
-    {%- endfor -%}
+    {% endfor %}
   </ul>
 </div>
 
 {% comment %} Show posts by taxonomy {% endcomment %}
-{%- for taxonomy in taxonomies -%}
-  {%- assign slugified_taxonomy_name = taxonomy[0] | slugify -%}
-  {%- assign posts = taxonomy[1] -%}
+{% for taxonomy in taxonomies %}
+  {% assign slugified_taxonomy_name = taxonomy[0] | slugify %}
+  {% assign posts = taxonomy[1] %}
   <h2 id="{{ slugified_taxonomy_name }}">{{ slugified_taxonomy_name }}</h2>
   <ul class="post-list-by-taxonomy">
-    {%- for post in posts -%}
+    {% for post in posts %}
       <li>
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
-    {%- endfor -%}
+    {% endfor %}
   </ul>
-{%- endfor -%}
+{% endfor %}

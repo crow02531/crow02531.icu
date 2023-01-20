@@ -6,32 +6,32 @@ permalink: /nav/dates/
 
 {% include home-header.html %}
 
-{%- assign taxonomies = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+{% assign taxonomies = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
 {% comment %} Show taxonomies {% endcomment %}
 <div class="taxonomies-wrapper">
   <ul class="taxonomies">
-    {%- for taxonomy in taxonomies -%}
+    {% for taxonomy in taxonomies %}
       <li>
-        {%- capture link -%}{{ page.permalink }}#{{ taxonomy.name }}{%- endcapture -%}
+        {% capture link %}{{ page.permalink }}#{{ taxonomy.name }}{% endcapture %}
         <a class="taxonomy" href="{{ link }}">
             <span>{{ taxonomy.name }}</span>
             <span class="taxonomy-count">{{ taxonomy.size }}</span>
         </a>
       </li>
-    {%- endfor -%}
+    {% endfor %}
   </ul>
 </div>
 
 {% comment %} Show posts by taxonomy {% endcomment %}
-{%- for taxonomy in taxonomies -%}
+{% for taxonomy in taxonomies %}
   <h2 id="{{ taxonomy.name }}">{{ taxonomy.name }}</h2>
   <ul class="post-list-by-taxonomy">
-    {%- assign posts = taxonomy.items -%}
-    {%- for post in posts -%}
+    {% assign posts = taxonomy.items %}
+    {% for post in posts %}
       <li>
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
-    {%- endfor -%}
+    {% endfor %}
   </ul>
-{%- endfor -%}
+{% endfor %}
