@@ -3,8 +3,8 @@
 // Styles for archive pages.
 
 .taxonomies-wrapper {
-  margin-top: var(--spacer-2);
-  margin-bottom: var(--spacer-2);
+  margin-top: $spacer-2;
+  margin-bottom: $spacer-2;
 }
 
 .taxonomies {
@@ -23,22 +23,14 @@
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid;
-    margin-bottom: var(--spacer);
+    margin-bottom: $spacer;
   }
 }
 
 .post-list-by-taxonomy {
   time {
-    font-family: var(--code-font);
+    font-family: $code-font;
   }
-}
-
-.back-to-top {
-  display: block;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  text-align: right;
-  text-decoration: none;
 }
 
 @media (max-width: $sm-width) {

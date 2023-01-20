@@ -3,11 +3,53 @@ layout: default
 ---
 
 <div class="pure-g">
-  <div class="sidebar-left pure-u-1 pure-u-md-1-4" style="color: white; background-image: url({{ site.sidebar_image }});">
-    {%- include sidebar-left.html -%}
+  <div class="page-sidebar pure-u-1 pure-u-md-1-4" style="background-image: url({{ site.sidebar_image }});">
+    <header class="masthead">
+      {%- if site.avatar -%}
+        <img src="{{ site.avatar }}" class="masthead-avatar" title="{{ site.author }}">
+      {%- endif -%}
+      <div class="masthead-title">
+        <a href="/" title="Home">{{ site.title }}</a>
+      </div>
+      <div class="masthead-tagline">
+        <small id="splash"></small>
+        <script src="/assets/js/splash.js"></script>
+        <script>assign_splash("splash");</script>
+      </div>
+      <nav>
+        <ul class="masthead-nav-list">
+          {%- if site.navigation.works -%}
+            <li class="masthead-nav-item">
+              <a href="{{ site.navigation.works }}">作品</a>
+            </li>
+          {%- endif -%}
+          {%- if site.navigation.about -%}
+            <li class="masthead-nav-item">
+              <a href="{{ site.navigation.about }}">关于</a>
+            </li>
+          {%- endif -%}
+        </ul>
+      </nav>
+      {%- if site.data.social -%}
+        <div class="masthead-social pure-menu pure-menu-horizontal">
+          <ul class="pure-menu-list">
+            {%- for social in site.data.social -%}
+              <li class="pure-menu-item">
+                <a
+                  class="masthead-social-icon pure-menu-link"
+                  href="{{ social.url }}"
+                  target="_blank">
+                  <i class="{{ social.icon | default: 'fas fa-link' }}" title="{{ social.title }}"></i>
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+    </header>
   </div>
 
-  <div class="content-page pure-u-1 pure-u-md-1-2">
+  <div class="page-content pure-u-1 pure-u-md-2-3">
     {{ content }}
 
     {%- include footer.html -%}

@@ -1,6 +1,6 @@
 // Sidebar
 //
-// Styles for the sidebar.
+// Styles for elements in the sidebar.
 
 .masthead {
   text-align: center;
@@ -13,7 +13,7 @@
   }
 }
 
-.avatar-image {
+.masthead-avatar {
   width: 30%;
   height: auto;
   border-radius: 50%;
@@ -30,7 +30,7 @@
 
   a:hover,
   a:focus {
-    color: var(--link-hover-color);
+    color: $link-hover-color;
   }
 }
 
@@ -42,49 +42,50 @@
   opacity: .7;
 }
 
-.navigation-list {
-  margin-top: var(--spacer-2);
+.masthead-nav-list {
+  margin-top: $spacer-2;
   padding: 0;
   list-style: none;
 }
 
-.navigation-item {
+.masthead-nav-item {
   display: block;
-  margin-bottom: var(--spacer);
-}
+  margin-bottom: $spacer;
 
-.navigation-item a {
-  background: transparent;
-  color: inherit;
-  letter-spacing: 0.05em;
-  font-size: 90%;
-  border-bottom: 2px solid;
-  border-color: inherit;
+  a {
+    background: transparent;
+    color: inherit;
+    letter-spacing: 0.05em;
+    font-size: 90%;
+    border-bottom: 2px solid;
+    border-color: inherit;
 
-  &:hover,
-  &:focus {
-    color: var(--link-hover-color);
+    &:hover,
+    &:focus {
+      color: $link-hover-color;
+    }
   }
 }
 
-.social {
-  margin-top: var(--spacer-2);
+.masthead-social {
+  margin-top: $spacer-2;
   font-size: 150%;
   white-space: normal;
   line-height: .5;
 }
 
-.social-icon {
-  padding: var(--spacer);
+.masthead-social-icon {
+  padding: $spacer;
+
   &:hover,
   &:focus {
-    color: var(--link-hover-color);
+    color: $link-hover-color;
     background-color: transparent;
   }
 }
 
 @media (max-width: $md-width) {
-  .avatar-image {
-    width: 15%;
+  .masthead-avatar {
+    width: 20%;
   }
 }

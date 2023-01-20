@@ -6,67 +6,34 @@ permalink: /nav/tags/
 
 {% include home-header.html %}
 
-<h1>{{ page.title }}</h1>
+{%- assign taxonomies = site.tags | sort -%}
 
-{%- assign taxonomies = site.tags -%}
-
-{% comment %} Calculate the max count of taxonomies {% endcomment %}
-{%- assign max_count = 0 -%}
-{%- for taxonomy in taxonomies -%}
-  {%- assign posts = taxonomy[1] -%}
-  {%- if posts.size > max_count -%}
-    {%- assign max_count = posts.size -%}
-  {%- endif -%}
-{%- endfor -%}
-
+{% comment %} Show taxonomies {% endcomment %}
 <div class="taxonomies-wrapper">
   <ul class="taxonomies">
-    {%- for i in (1..max_count) reversed -%}
-      {%- for taxonomy in taxonomies -%}
-        {%- assign taxonomy_name = taxonomy[0] -%}
-        {%- assign slugified_taxonomy_name = taxonomy_name | slugify -%}
-        {%- assign posts = taxonomy[1] -%}
-        {%- if posts.size == i -%}
-          <li>
-            {%- capture link -%}{{ page.permalink }}#{{ slugified_taxonomy_name }}{%- endcapture -%}
-            <a class="taxonomy" href="{{ link | relative_url }}">
-              <span>
-                {%- if page.type == 'tags' -%}
-                  {{ slugified_taxonomy_name }}
-                {%- else -%}
-                  {{ taxonomy_name }}
-                {%- endif -%}
-              </span>
-              <span class="taxonomy-count">{{ posts.size }}</span>
-            </a>
-          </li>
-        {%- endif -%}
-      {%- endfor -%}
+    {%- for taxonomy in taxonomies -%}
+      {%- assign slugified_taxonomy_name = taxonomy[0] | slugify -%}
+      <li>
+        {%- capture link -%}{{ page.permalink }}#{{ slugified_taxonomy_name }}{%- endcapture -%}
+        <a class="taxonomy" href="{{ link }}">
+          <span>{{ slugified_taxonomy_name }}</span>
+          <span>{{ taxonomy[1].size }}</span>
+        </a>
+      </li>
     {%- endfor -%}
   </ul>
 </div>
 
 {% comment %} Show posts by taxonomy {% endcomment %}
-{%- for i in (1..max_count) reversed -%}
-  {%- for taxonomy in taxonomies -%}
-    {%- assign taxonomy_name = taxonomy[0] -%}
-    {%- assign slugified_taxonomy_name = taxonomy_name | slugify -%}
-    {%- assign posts = taxonomy[1] -%}
-    {%- if posts.size == i -%}
-      <h2 id="{{ slugified_taxonomy_name }}">
-        {%- if page.type == 'tags' -%}
-          {{ slugified_taxonomy_name }}
-        {%- else -%}
-          {{ taxonomy_name }}
-        {%- endif -%}
-      </h2>
-      <ul class="post-list-by-taxonomy">
-        {%- for post in posts -%}
-          <li>
-            <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          </li>
-        {%- endfor -%}
-      </ul>
-    {%- endif -%}
-  {%- endfor -%}
+{%- for taxonomy in taxonomies -%}
+  {%- assign slugified_taxonomy_name = taxonomy[0] | slugify -%}
+  {%- assign posts = taxonomy[1] -%}
+  <h2 id="{{ slugified_taxonomy_name }}">{{ slugified_taxonomy_name }}</h2>
+  <ul class="post-list-by-taxonomy">
+    {%- for post in posts -%}
+      <li>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {%- endfor -%}
+  </ul>
 {%- endfor -%}

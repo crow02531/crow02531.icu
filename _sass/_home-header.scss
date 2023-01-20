@@ -1,14 +1,11 @@
 // Home Header
 //
-// Styles for the home header.
+// Styles for elements in home header.
 
 .home-header-bar {
   width: 100%;
   height: 100%;
-
-  -webkit-box-shadow: 0 1em 1em -.9em var(--border-color);
-     -moz-box-shadow: 0 1em 1em -.9em var(--border-color);
-          box-shadow: 0 1em 1em -.9em var(--border-color);
+  box-shadow: 0 1em 1em -.9em $border-color;
 }
 
 .home-header-menu {
@@ -19,11 +16,11 @@
     &:focus {
       color: inherit;
       background-color: inherit;
-      border-bottom-color: var(--link-color);
+      border-bottom-color: $link-color;
     }
   }
 
   .current-item {
-    border-bottom-color: var(--link-color);
+    border-bottom-color: $link-color;
   }
 }

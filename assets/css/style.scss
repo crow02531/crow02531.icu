@@ -1,4 +1,5 @@
 ---
+# Modified after poole.
 ---
 
 @import "variables";
@@ -10,11 +11,4 @@
 @import "posts";
 @import "archive";
 @import "home-header";
-@import "pagination";
-@import "message";
 @import "banner";
-
-@import "syntax-light";
-@media (prefers-color-scheme: dark) {
-  @import "syntax-dark";
-}
