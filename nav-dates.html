@@ -4,7 +4,7 @@ title: 日期
 permalink: /nav/dates/
 ---
 
-{% include home-header.html %}
+{% include home-header.html cur = 'dates' %}
 
 {% assign taxonomies = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
