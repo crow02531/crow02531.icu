@@ -1,5 +1,5 @@
 function apply_smiles(root) {
-    const drawer = new SmilesDrawer.SvgDrawer({ scale: 1 });
+    const drawer = new SmilesDrawer.SvgDrawer({ scale: 1.3, experimental: true });
     const walker = document.createTreeWalker(
         root,
         NodeFilter.SHOW_ELEMENT,
