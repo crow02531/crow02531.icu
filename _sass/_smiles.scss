@@ -1,0 +1,19 @@
+// SMILES
+//
+// Styles for SMILES.
+
+.smiles-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+
+.smiles-item {
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.8em;
+}

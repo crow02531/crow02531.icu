@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$']],
+          processEscapes: true
+        }
+      };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
-    <script>MathJax = { tex: { inlineMath: [['$', '$']], processEscapes: true } };</script>
 
     {% seo %}
   </head>
@@ -21,6 +29,9 @@
 
     <script src="https://kit.fontawesome.com/6bacd3d52f.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/smiles-drawer@2.1.7/dist/smiles-drawer.min.js"></script>
-    <script>SmiDrawer.apply({ scale: 1 });</script>
+    <script src="/assets/js/smiles.js"></script>
+    <script>
+      apply_smiles(document.body);
+    </script>
   </body>
 </html>
