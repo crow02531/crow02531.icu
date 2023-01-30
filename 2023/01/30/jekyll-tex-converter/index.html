@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh">
+  <head><link rel="stylesheet" href="content.css">
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/csshake@1.7.0/dist/csshake-hard.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/6bacd3d52f.js"></script>
+  </head>
+  <body>
+    <main>
+      
+
+
+
+<div class="pure-g">
+  <div class="post-banner pure-u-1" style="background-image: url(/assets/screenshots/2022-03-27_11.45.26.png);">
+    <div class="banner-title">
+      <a href="/">crow02531's blog</a>
+    </div>
+    
+      <div class="banner-tagline">
+        Nightfall in the dust
+      </div>
+    
+  </div>
+
+  <div class="post-content pure-u-1 pure-u-md-2-3">
+    <article class="post">
+      <h1 class="post-title">jekyll-tex-converter发布</h1>
+      <div class="post-meta">
+        
+        <time datetime="2023-01-30T16:12:27+08:00" itemprop="datePublished">30 Jan 2023</time>
+      </div>
+
+      
+<!--  l. 7  --><p class='noindent'><span class='sout'>为了在Jekyll上不引用外部图片展示有机分子的结构式, 画反应机理, 煞费苦心. 不论是MathJax还是KaTeX都不支持chemfig包,
+以后估计也不会支持, 果断弃用. 目前没有一个关于latex的js库支持chemfig包(原因无一例外都是chemfig包依赖tikz包而tikz太大),
+只能回避不适用chemfig了. 接着发现了Kekule.js和smilesDrawer, 这两个js库能在客户端(阅览器)上画分子结构,
+都支持SMILES, 然而SMILES并不能表示机理(虽然有扩展过的SMILES语言支持画反应),
+除了SMILES之外的其他分子结构表达语言例如CML、MOL等均不支持画机理, 再次碰壁. 果然没chemfig包很麻烦, 回避不了,
+也没能耐让MathJax等支持chemfig, 难道只能妥协引用外部图片了吗? 不, 坚决拒绝, 实物照片外部引用就算了,
+结构式、机理等要是引用外部图片的画管理起来会烦死的, 道理就跟没MathJax纯用图片写数学密集的文章一样,
+那是地狱! 是地狱! 终于, 转机来了. ’.tex’ to ’.html’, <a href='https://www.ctan.org/pkg/tex4ht'>tex4ht</a>, Jekyll是静态网站生成器,
+只要搞个converter把Jekyll中用latex写的文章生成合适的html就行了, 装了latex的电脑都有<a href='https://www.ctan.org/pkg/make4ht'>make4ht</a>,
+能将latex转html, 而且只要你装了chemfig包, make4ht就支持带chemfig的latex转html. 写个Jekyll插件,
+调用本地tex distribution中的make4ht做tex to html, 事情不就解决了吗, 管你写的latex再复杂, 用了再多的包,
+都没有关系.</span>
+</p><!--  l. 9  --><p class='indent'>   于是花了几天的时间写了个Jekyll插件<a href='https://github.com/crow02531/jekyll-tex-converter'>jekyll-tex-converter</a>.
+</p><!--  l. 11  --><p class='indent'>   这张post就是用latex写的, 看, 它支持chemfig, 多好.
+</p><!--  l. 13  --><p class='indent'>         <img alt='ONHNNHONH ' src='content0x.svg' />
+</p>
+
+      
+        <div class="post-tags-section">
+          <i class="post-tags-icon fas fa-tags"></i>
+          <ul class="post-tags">
+            
+              <li>
+                
+                
+                  <a class="post-tag" href="/nav/tags/#web">web</a>
+                
+              </li>
+            
+              <li>
+                
+                
+                  <a class="post-tag" href="/nav/tags/#coding">coding</a>
+                
+              </li>
+            
+          </ul>
+        </div>
+      
+
+      
+        <script src="https://giscus.app/client.js"
+        data-repo="crow02531/crow02531.github.io"
+        data-repo-id="R_kgDOIA5nEg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOIA5nEs4CRv98"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+      
+    </article>
+
+    <footer>
+  
+  
+  
+  <small>
+    &copy; 2021&nbsp;-&nbsp;2023 crow02531. All rights reserved. Powered by <a href="https://pages.github.com/">Github Pages</a> | <a href="https://vercel.com/">Vercel</a> | <a href="https://jekyllrb.com/">Jekyll</a> | <a href="https://giscus.app/">gisucs</a>.
+  </small>
+</footer>
+  </div>
+</div>
+    </main>
+  </body>
+</html>
