@@ -14,6 +14,7 @@
   margin-left: auto;
   margin-right: auto;
   min-height: 100vh;
+  width: 100%;
 }
 
 .page-content {
@@ -29,6 +30,7 @@
   padding: $spacer;
   background: center / cover;
   height: 100vh;
+  width: 100%;
   color: $gray-200;
 }
 
@@ -66,6 +68,10 @@ footer {
 
 // on medium-sized screens and above (e.g. computer)
 @media (min-width: $md-width) {
+  %content {
+    width: 66.6%;
+  }
+
   .page-content {
     padding-top: $spacer-3;
     padding-left: $spacer-3;
@@ -77,6 +83,7 @@ footer {
     position: fixed;
     top: 0;
     bottom: 0;
+    width: 25%;
   }
 
   .home-header {
@@ -86,10 +93,6 @@ footer {
 
 // on screens under medium (e.g. phone)
 @media (max-width: $md-width) {
-  %content {
-    width: 100%;
-  }
-
   .post-banner {
     height: 260px;
   }

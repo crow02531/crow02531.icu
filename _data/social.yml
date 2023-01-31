@@ -1,9 +1,9 @@
 - title: Email
   url: mailto://crow02531@outlook.com
-  icon: fas fa-envelope
+  icon: bi bi-envelope-at-fill
 - title: GitHub
   url: https://github.com/crow02531
-  icon: fab fa-github
+  icon: bi bi-github
 - title: Mcbbs
   url: https://www.mcbbs.net/?4974372
-  icon: fas fa-cube
+  icon: bi bi-hexagon

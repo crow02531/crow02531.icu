@@ -1,8 +1,16 @@
 ---
 ---
 
-var splash_list = ["{{ site.data.splash | join: '", "' }}"];
+class Splash {
 
-function assign_splash(id) {
-  document.getElementById(id).innerHTML = splash_list[Math.floor(Math.random() * splash_list.length)];
+  /**
+   * Randomly pick up a splash.
+   * 
+   * @returns {string}
+   */
+  static pickSplash() {
+    return Splash.splashList[Math.floor(Math.random() * Splash.splashList.length)];
+  }
 }
+
+Splash.splashList = ["{{ site.data.splash | join: '", "' }}"];
