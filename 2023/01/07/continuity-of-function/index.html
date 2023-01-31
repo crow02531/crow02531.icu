@@ -5,40 +5,59 @@
     <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/menus-min.css">
     <link rel="stylesheet" href="https://unpkg.com/csshake@1.7.0/dist/csshake-hard.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
-    <script src="https://kit.fontawesome.com/6bacd3d52f.js"></script>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>刻画函数连续性 | crow02531’s blog</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="刻画函数连续性" />
+<meta name="author" content="crow02531" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="早在学习实数函数的过程中我们就已经对连续性有了一定的认识，向量函数也有连续性的概念，不同的领域研究不同的函数，对函数连续性的定义也千差万别. 为了维护理论的简洁，对于函数连续性我们需要一个足够抽象、广义、高度概括的定义. 本篇文章以拓扑学对函数连续性的定义为基础阐述有关函数连续性的知识框架." />
+<meta property="og:description" content="早在学习实数函数的过程中我们就已经对连续性有了一定的认识，向量函数也有连续性的概念，不同的领域研究不同的函数，对函数连续性的定义也千差万别. 为了维护理论的简洁，对于函数连续性我们需要一个足够抽象、广义、高度概括的定义. 本篇文章以拓扑学对函数连续性的定义为基础阐述有关函数连续性的知识框架." />
+<link rel="canonical" href="http://localhost:4000/2023/01/07/continuity-of-function/" />
+<meta property="og:url" content="http://localhost:4000/2023/01/07/continuity-of-function/" />
+<meta property="og:site_name" content="crow02531’s blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-01-07T14:12:32+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="刻画函数连续性" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"crow02531"},"dateModified":"2023-01-07T14:12:32+08:00","datePublished":"2023-01-07T14:12:32+08:00","description":"早在学习实数函数的过程中我们就已经对连续性有了一定的认识，向量函数也有连续性的概念，不同的领域研究不同的函数，对函数连续性的定义也千差万别. 为了维护理论的简洁，对于函数连续性我们需要一个足够抽象、广义、高度概括的定义. 本篇文章以拓扑学对函数连续性的定义为基础阐述有关函数连续性的知识框架.","headline":"刻画函数连续性","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/01/07/continuity-of-function/"},"url":"http://localhost:4000/2023/01/07/continuity-of-function/"}</script>
+<!-- End Jekyll SEO tag -->
+
   </head>
+
   <body>
     <main>
       
 
 
 
-<div class="pure-g">
-  <div class="post-banner pure-u-1" style="background-image: url(/assets/screenshots/2022-06-08_20.30.43.png);">
-    <div class="banner-title">
-      <a href="/">crow02531's blog</a>
-    </div>
-    
-      <div class="banner-tagline">
-        Frozen treasures
-      </div>
-    
+<div class="post-banner" style="background-image: url(/assets/screenshots/2022-06-08_20.30.43.png);">
+  <div class="banner-title">
+    <a href="/">crow02531's blog</a>
   </div>
 
-  <div class="post-content pure-u-1 pure-u-md-2-3">
-    <article class="post">
-      <h1 class="post-title">刻画函数连续性</h1>
-      <div class="post-meta">
-        
-        <time datetime="2023-01-07T14:12:32+08:00" itemprop="datePublished">7 Jan 2023</time>
-      </div>
+  
+    <div class="banner-tagline">
+      Frozen treasures
+    </div>
+  
+</div>
 
-      <p>早在学习实数函数的过程中我们就已经对连续性有了一定的认识，向量函数也有连续性的概念，不同的领域研究不同的函数，对函数连续性的定义也千差万别. 为了维护理论的简洁，对于函数连续性我们需要一个足够抽象、广义、高度概括的定义. 本篇文章以拓扑学对函数连续性的定义为基础阐述有关函数连续性的知识框架.</p>
+<div class="post-content">
+  <article class="post">
+    <h1 class="post-title">刻画函数连续性</h1>
+    <div class="post-meta">
+      
+      <time datetime="2023-01-07T14:12:32+08:00" itemprop="datePublished">7 Jan 2023</time>
+    </div>
+
+    <p>早在学习实数函数的过程中我们就已经对连续性有了一定的认识，向量函数也有连续性的概念，不同的领域研究不同的函数，对函数连续性的定义也千差万别. 为了维护理论的简洁，对于函数连续性我们需要一个足够抽象、广义、高度概括的定义. 本篇文章以拓扑学对函数连续性的定义为基础阐述有关函数连续性的知识框架.</p>
 
 <h2 id="拓扑空间与度量空间">拓扑空间与度量空间</h2>
 
@@ -221,24 +240,24 @@
 
 
 
-      
-        <div class="post-tags-section">
-          <i class="post-tags-icon fas fa-tags"></i>
-          <ul class="post-tags">
-            
-              <li>
-                
-                
-                  <a class="post-tag" href="/nav/tags/#mathematics">mathematics</a>
-                
-              </li>
-            
-          </ul>
-        </div>
-      
+    
+      <div class="post-tags-section">
+        <i class="post-tags-icon bi bi-tags-fill"></i>
+        <ul class="post-tags">
+          
+            <li>
+              
+              
+                <a class="post-tag" href="/nav/tags/#mathematics">mathematics</a>
+              
+            </li>
+          
+        </ul>
+      </div>
+    
 
-      
-        <script src="https://giscus.app/client.js"
+    
+      <script src="https://giscus.app/client.js"
         data-repo="crow02531/crow02531.github.io"
         data-repo-id="R_kgDOIA5nEg"
         data-category="Announcements"
@@ -253,10 +272,10 @@
         crossorigin="anonymous"
         async>
 </script>
-      
-    </article>
+    
+  </article>
 
-    <footer>
+  <footer>
   
   
   
@@ -264,7 +283,6 @@
     &copy; 2021&nbsp;-&nbsp;2023 crow02531. All rights reserved. Powered by <a href="https://pages.github.com/">Github Pages</a> | <a href="https://vercel.com/">Vercel</a> | <a href="https://jekyllrb.com/">Jekyll</a> | <a href="https://giscus.app/">gisucs</a>.
   </small>
 </footer>
-  </div>
 </div>
     </main>
   </body>
