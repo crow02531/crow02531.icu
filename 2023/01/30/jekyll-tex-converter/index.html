@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh">
-  <head><link rel="stylesheet" href="content.css">
+  <head><link rel="stylesheet" href="_OA2U4i@411AxFKoo1VdTyZ.css">
     <meta charset="UTF-8">
     <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,15 @@
 <meta property="og:title" content="jekyll-tex-converter发布" />
 <meta name="author" content="crow02531" />
 <meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/2023/01/30/jekyll-tex-converter/" />
+<meta property="og:url" content="http://localhost:4000/2023/01/30/jekyll-tex-converter/" />
 <meta property="og:site_name" content="crow02531’s blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-01-30T16:12:27+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="jekyll-tex-converter发布" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"crow02531"},"dateModified":"2023-01-30T16:12:27+08:00","datePublished":"2023-01-30T16:12:27+08:00","headline":"jekyll-tex-converter发布","mainEntityOfPage":{"@type":"WebPage","@id":"/2023/01/30/jekyll-tex-converter/"},"url":"/2023/01/30/jekyll-tex-converter/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"crow02531"},"dateModified":"2023-01-30T16:12:27+08:00","datePublished":"2023-01-30T16:12:27+08:00","headline":"jekyll-tex-converter发布","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/01/30/jekyll-tex-converter/"},"url":"http://localhost:4000/2023/01/30/jekyll-tex-converter/"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -33,14 +35,14 @@
 
 
 
-<div class="post-banner" style="background-image: url(/assets/screenshots/2022-03-27_11.45.26.png);">
+<div class="post-banner" style="background-image: url(/assets/screenshots/2020-02-29_12.11.06.png);">
   <div class="banner-title">
     <a href="/">crow02531's blog</a>
   </div>
 
   
     <div class="banner-tagline">
-      Nightfall in the dust
+      Milky night
     </div>
   
 </div>
@@ -54,21 +56,13 @@
     </div>
 
     
-<!--  l. 7  --><p class='noindent'><span class='sout'>为了在Jekyll上不引用外部图片展示有机分子的结构式, 画反应机理, 煞费苦心. 不论是MathJax还是KaTeX都不支持chemfig包,
-以后估计也不会支持, 果断弃用. 目前没有一个关于latex的js库支持chemfig包(原因无一例外都是chemfig包依赖tikz包而tikz太大),
-只能回避不适用chemfig了. 接着发现了Kekule.js和smilesDrawer, 这两个js库能在客户端(阅览器)上画分子结构,
-都支持SMILES, 然而SMILES并不能表示机理(虽然有扩展过的SMILES语言支持画反应),
-除了SMILES之外的其他分子结构表达语言例如CML、MOL等均不支持画机理, 再次碰壁. 果然没chemfig包很麻烦, 回避不了,
-也没能耐让MathJax等支持chemfig, 难道只能妥协引用外部图片了吗? 不, 坚决拒绝, 实物照片外部引用就算了,
-结构式、机理等要是引用外部图片的画管理起来会烦死的, 道理就跟没MathJax纯用图片写数学密集的文章一样,
-那是地狱! 是地狱! 终于, 转机来了. ’.tex’ to ’.html’, <a href='https://www.ctan.org/pkg/tex4ht'>tex4ht</a>, Jekyll是静态网站生成器,
-只要搞个converter把Jekyll中用latex写的文章生成合适的html就行了, 装了latex的电脑都有<a href='https://www.ctan.org/pkg/make4ht'>make4ht</a>,
-能将latex转html, 而且只要你装了chemfig包, make4ht就支持带chemfig的latex转html. 写个Jekyll插件,
-调用本地tex distribution中的make4ht做tex to html, 事情不就解决了吗, 管你写的latex再复杂, 用了再多的包,
-都没有关系.</span>
-</p><!--  l. 9  --><p class='indent'>   于是花了几天的时间写了个Jekyll插件<a href='https://github.com/crow02531/jekyll-tex-converter'>jekyll-tex-converter</a>.
-</p><!--  l. 11  --><p class='indent'>   这张post就是用latex写的, 看, 它支持chemfig, 多好.
-</p><!--  l. 13  --><p class='indent'>         <img alt='ONHNNHONH ' src='content0x.svg' />
+<!--  l. 7  --><p class='noindent'><span class='sout'>为了在Jekyll上不引用外部图片展示有机分子的结构式，画反应机理，煞费苦心。不论是MathJax还是KaTeX都不支持chemfig包，以后估计也不支持，果断弃用。目前没有一个关于latex的js库支持chemfig包(原因无一例外都是chemfig包依赖tikz包，而tikz太大)，只能回避不适用chemfig了。接着发现了Kekule.js和smilesDrawer，这两个js库能在客户端（阅览器）上画分子结构，都支持SMILES，然而SMILES并不能表示机理（虽然有扩展过的SMILES语言支持画反应），除了SMILES之外的其他分子结构表达语言例如CML、MOL等均不支持画机理，再次碰壁。果然没chemfig包很麻烦，回避不了，也没能耐让MathJax等支持chemfig，难道只能妥协引用外部图片了吗?
+不，坚决拒绝，实物照片外部引用就算了，结构式、机理等要是引用外部图片的画管理起来会烦死的，道理就跟没MathJax纯用图片写数学密集的文章一样，那是地狱！是地狱！终于，转机来了。’.tex’
+to ’.html’，<a href='https://www.ctan.org/pkg/tex4ht'>tex4ht</a>，Jekyll是静态网站生成器，只要搞个converter把Jekyll中用latex写的文章生成合适的html就行了，装了latex的电脑都有<a href='https://www.ctan.org/pkg/make4ht'>make4ht</a>，能将latex转html，而且只要你装了chemfig包，make4ht就支持带chemfig的latex转html。写个Jekyll插件，调用本地tex
+distribution中的make4ht做tex to html，事情不就解决了吗，管你写的latex再复杂，用了再多的包，都没有关系。</span>
+</p><!--  l. 9  --><p class='indent'>   于是花了几天的时间写了个Jekyll插件<a href='https://github.com/crow02531/jekyll-tex-converter'>jekyll-tex-converter</a>。
+</p><!--  l. 11  --><p class='indent'>   这张post就是用<span class='LATEX'>L<span class='A'>A</span><span class='TEX'>T<span class='E'>E</span>X</span></span>写的，看，它支持chemfig，多好。
+</p><!--  l. 13  --><p class='indent'>         <img alt='ONHNNHONH ' src='_fF4hng@kXbS20EvhP5sE$G.svg' />
 </p>
 
     

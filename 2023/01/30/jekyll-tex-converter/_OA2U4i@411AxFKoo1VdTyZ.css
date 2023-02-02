@@ -72,6 +72,11 @@ table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
 .hline hr, .cline hr{border:none;border-top:1px solid black;}
 .hline {border-top: 1px solid black;}
 .tabbing-right {text-align:right;}
+span.TEX {letter-spacing: -0.125em; margin-right:0.125em;}
+span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}
+a span.TEX span.E {text-decoration: none; }
+span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}
+span.LATEX span.TEX{ position:relative; margin-left: -0.4em; margin-right:0.125em; }
 div.float, div.figure {margin-left: auto; margin-right: auto;}
 div.float img {text-align:center;}
 div.figure img {text-align:center;}
@@ -120,7 +125,6 @@ figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-al
 figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
 p + figcaption, img + figcaption{margin-top: 1em;}
 .abstract{margin:1em;}
-.small-caps{font-variant: small-caps;}
 .uline{ text-decoration:underline; }
 .uuline{ text-decoration:underline; }
 span.sout {text-decoration: line-through }
