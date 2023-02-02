@@ -30,7 +30,7 @@ plugins:
 title: crow02531's blog
 author: crow02531
 permalink: pretty
-avatar: /avatar.ico
+avatar: /assets/avatar.jpg
 sidebar_image: /assets/screenshots/2022-06-08_22.48.22.png
 paginate: 5
 
