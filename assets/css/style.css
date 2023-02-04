@@ -18,9 +18,7 @@ a {
     color: inherit; }
 
 img {
-  display: block;
   max-width: 100%;
-  margin-bottom: 1rem;
   border-radius: 0.25rem; }
 
 table {
@@ -69,7 +67,7 @@ h2 {
 
 h3 {
   margin-top: 1.5rem;
-  font-size: 1.17rem; }
+  font-size: 1.45rem; }
 
 h4 {
   margin-top: 1rem;
