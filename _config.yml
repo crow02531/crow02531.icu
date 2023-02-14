@@ -1,41 +1,26 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-
 # Build settings
 plugins:
-  - jekyll-tex-converter
+  - jekyll-t4j
   - jekyll-paginate
   - jekyll-seo-tag
 
 
-# Properties
+# Basic Properties
 title: crow02531's blog
 author: crow02531
 permalink: pretty
 avatar: /assets/avatar.jpg
-sidebar_image: /assets/screenshots/2022-06-08_22.48.22.png
+sidebar_image: /assets/screenshots/2020-02-28_17.46.02.png
 paginate: 5
-
 navigation:
   dates: /nav/dates/
   tags: /nav/tags/
   about: /nav/about/
   works: /nav/works/
+
+
+# T4J
+t4j:
+  packages:
+    - chemfig
+    - mhchem
