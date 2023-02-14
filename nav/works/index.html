@@ -12,7 +12,7 @@
 
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>作品 | crow02531’s blog</title>
-<meta name="generator" content="Jekyll v3.9.2" />
+<meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="作品" />
 <meta name="author" content="crow02531" />
 <meta property="og:locale" content="en_US" />
@@ -30,7 +30,7 @@
 
   <body>
     <main>
-      <div class="page-sidebar" style="background-image: url(/assets/screenshots/2022-06-08_22.48.22.png);">
+      <div class="page-sidebar" style="background-image: url(/assets/screenshots/2020-02-28_17.46.02.png);">
   <header class="masthead">
     
       <img src="/assets/avatar.jpg" class="masthead-avatar" title="crow02531">
@@ -103,31 +103,17 @@
 
 <p>由于本人写了一半弃坑或发布后完全不管的作品过多，这里只贴出完成度较高且较有意义（？）的项目。</p>
 
-<!--
-## Algebra
-
-crow02531的个人工具书，线性代数和抽象代数混着讲。
-
-[项目链接](/assets/articles/algebra/)
-
-## Calculus
-
-crow02531的个人工具书，主要讲述抽象空间上的测度和积分，同时也把一元微积分、多元微积分作为一种特殊情况讲述。
-
-[项目链接](/assets/articles/calculus/)
--->
-
 <h2 id="wolftail">Wolftail</h2>
 
 <p>一个通过一系列游走于死亡边缘的方法使得Forge modder们能够完全摆脱EntityPlayer设计自己想要的种族的Minecraft mod。然而完全摆脱EntityPlayer的种族玩法一般十分单调有限，所以一直在怀疑写这个mod的意义何在。</p>
 
 <p><a href="https://github.com/crow02531/Wolftail">项目链接</a></p>
 
-<h2 id="jekyll-tex-converter">jekyll-tex-converter</h2>
+<h2 id="jekyll-t4j">jekyll-t4j</h2>
 
-<p>一个整合Jekyll和本地tex distirbution的converter类的Jekyll插件。由于是利用本地tex distribution中的tex4ht来做latex转html，故能支持几乎所有package（当然包括chemfig等）。然而tex4ht转换一次用时至少1秒半，平均4秒多，不敢想象一个全用latex写的网站build一次要多久…</p>
+<p>一个整合Jekyll和本地TeX distirbution的Jekyll插件。利用dvisvgm来做渲染，支持绝大多数package（包括chemfig、tikz等）。用了缓存加速，预编译preamble，bulk rendering，并利用KaTeX处理大多数常用latex，然而调优了这么多速度依然可以很慢。</p>
 
-<p><a href="https://github.com/crow02531/jekyll-tex-converter">项目链接</a></p>
+<p><a href="https://github.com/crow02531/jekyll-t4j">项目链接</a></p>
 
 
   <footer>
