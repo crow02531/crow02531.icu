@@ -17,12 +17,12 @@
         background-clip: padding-box;
 
         &:hover {
-            background-color: $gray-300;
+            background-color: $gray-200;
         }
     }
 
     .active {
-        background-color: $gray-300;
+        background-color: $gray-200;
     }
 
     a {

@@ -133,5 +133,11 @@ a[href^="#fnref:"] {
 }
 
 .paintpic {
-  height: 560px;
+  max-height: 560px;
+}
+
+.display {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

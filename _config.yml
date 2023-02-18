@@ -9,7 +9,7 @@ plugins:
 title: crow02531's blog
 author: crow02531
 permalink: pretty
-avatar: /assets/avatar.jpg
+avatar: /assets/img/avatar.jpg
 sidebar_image: /assets/screenshots/2020-02-28_17.46.02.png
 paginate: 5
 navigation:
