@@ -18,13 +18,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="种族模组一直是Minecraft里的坑，传统的实现思路是对EntityPlayer进行修饰，例如说更改相关的渲染代码来改变玩家的外形，更改逻辑代码以实现种族的某些特性，使用这种方法的一个经典例子是血族传说，一个稳定且知名的模组。" />
 <meta property="og:description" content="种族模组一直是Minecraft里的坑，传统的实现思路是对EntityPlayer进行修饰，例如说更改相关的渲染代码来改变玩家的外形，更改逻辑代码以实现种族的某些特性，使用这种方法的一个经典例子是血族传说，一个稳定且知名的模组。" />
+<link rel="canonical" href="http://localhost:4000/2021/10/19/wolftail-and-riceball/" />
+<meta property="og:url" content="http://localhost:4000/2021/10/19/wolftail-and-riceball/" />
 <meta property="og:site_name" content="crow02531’s blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-10-19T14:09:55+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Wolftail与Riceball实现第一人称控制非EntityPlayer实体，新的种族模组实现方法是否有望？" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"crow02531"},"dateModified":"2021-10-19T14:09:55+08:00","datePublished":"2021-10-19T14:09:55+08:00","description":"种族模组一直是Minecraft里的坑，传统的实现思路是对EntityPlayer进行修饰，例如说更改相关的渲染代码来改变玩家的外形，更改逻辑代码以实现种族的某些特性，使用这种方法的一个经典例子是血族传说，一个稳定且知名的模组。","headline":"Wolftail与Riceball实现第一人称控制非EntityPlayer实体，新的种族模组实现方法是否有望？","mainEntityOfPage":{"@type":"WebPage","@id":"/2021/10/19/wolftail-and-riceball/"},"url":"/2021/10/19/wolftail-and-riceball/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"crow02531"},"dateModified":"2021-10-19T14:09:55+08:00","datePublished":"2021-10-19T14:09:55+08:00","description":"种族模组一直是Minecraft里的坑，传统的实现思路是对EntityPlayer进行修饰，例如说更改相关的渲染代码来改变玩家的外形，更改逻辑代码以实现种族的某些特性，使用这种方法的一个经典例子是血族传说，一个稳定且知名的模组。","headline":"Wolftail与Riceball实现第一人称控制非EntityPlayer实体，新的种族模组实现方法是否有望？","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2021/10/19/wolftail-and-riceball/"},"url":"http://localhost:4000/2021/10/19/wolftail-and-riceball/"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -34,14 +36,14 @@
 
 
 
-<div class="post-banner" style="background-image: url(/assets/screenshots/2022-06-09_00.07.58.png);">
+<div class="post-banner" style="background-image: url(/assets/photos/IMG_20220926_161450.webp);">
   <div class="banner-title">
     <a href="/">crow02531's blog</a>
   </div>
 
   
     <div class="banner-tagline">
-      Rainy days
+      Breezy field
     </div>
   
 </div>
@@ -61,7 +63,7 @@
 <p><a href="https://github.com/crow02531/Riceball">Riceball</a>的根本目的是加入一个叫舰娘的种族，这个种族要求玩家不能以steve的玩法玩MC及其他MOD。显然这个要求用传统方法实现会相当吃力，因为传统方法对EntityPlayer修饰来修饰去，到底还是EntityPlayer，若要让玩家没法以steve的玩法体验游戏，势必要进行各自各样的特性禁用，以让EntityPlayer变成一张白纸，再在这张白纸上添加需要的功能，而传统方法最不擅长的就是特性禁用，Riceball需要新的方法。</p>
 
 <p><a href="https://github.com/crow02531/Wolftail">Wolftail</a>提供了一种思路，下图是运用Wolftail的演示效果：
-<img src="/assets/img/2021-10-19-wolftail-and-riceball_0.png" alt="演示效果" title="演示效果" />
+<img src="/assets/img/2021-10-19-wolftail-and-riceball_0.webp" alt="演示效果" title="演示效果" />
 图中可见两个客户端，左侧的客户端显示一个类似命令行的界面，右侧的客户端显示正常游戏画面，左侧客户端是舰娘玩家，右侧是steve。</p>
 
 <p>Wolftail是通过“连接代理”的方法实现种族模组的。客户端登录服务器时（均装了FORGE），连接先经过HANDSHAKE阶段，之后经过FML HANDSHAKE阶段，然后服务端再把生成的关联该客户端的EntityPlayer加入到游戏里。“连接代理”就是在FML HANDSHAKE阶段之后于服务端阻止EntityPlayer加入游戏，得到一个仅建立了FML CONNECTION的连接，这样的话在服务端就完全没有相关的EntityPlayer，我们得到了一张白纸连接，爱做什么就做什么，比方说我可以生成一只EntityPig，连接断了后给这只猪setDead，没有其他东西会干扰我们，在MC及其他MOD看来那只是一只猪。</p>
