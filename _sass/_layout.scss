@@ -8,17 +8,20 @@
 }
 
 %content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: $spacer-2;
   padding-left: $spacer-2;
   padding-right: $spacer-2;
   margin-left: auto;
   margin-right: auto;
-  min-height: 100vh;
   width: 100%;
 }
 
 .page-content {
   @extend %content;
+  min-height: 100vh;
 }
 
 .post-content {
@@ -34,25 +37,43 @@
   color: $gray-200;
 }
 
-.post-banner {
+%banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: center / cover;
   width: 100%;
-  height: 430px;
-  margin-bottom: 2em;
   color: white;
 
   a {
     color: inherit;
     text-decoration: none;
+  }
+}
 
+.showcase-banner {
+  @extend %banner;
+  padding-bottom: .5em;
+}
+
+.post-banner {
+  @extend %banner;
+  height: 430px;
+  margin-bottom: 2em;
+
+  a {
     &:hover,
     &:focus {
       color: inherit;
     }
   }
+}
+
+.showcase-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .pagination {

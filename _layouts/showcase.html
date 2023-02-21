@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="showcase-wrapper">
+  <div>
+    <div class="showcase-banner" style="background-image: url({{ site.sidebar_image }});">
+      <div class="banner-title">
+        <a href="/">{{ site.title }}</a>
+      </div>
+    </div>
+
+    <div class="post-content">
+      <article class="post" style="margin-bottom: 0;">
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% if page.meta %}
+          <div class="post-meta">{{ page.meta }}</div>
+        {% endif %}
+
+        {{ content }}
+      </article>
+    </div>
+  </div>
+
+  <div style="margin: 0 auto; padding: 0 1em;">
+    {% include footer.html %}
+  </div>
+</div>
