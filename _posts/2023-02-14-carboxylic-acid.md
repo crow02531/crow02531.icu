@@ -18,20 +18,20 @@ blah blah...
 
 **注**：和醇羟基不同，羧基并不要求与其相连的基团有什么特殊的性质.
 
-![](/assets/whiteboards/@benzoic-acid.png){:.display}
+![](/assets/whiteboards/@benzoic-acid.webp){:.display}
 <center>苯甲酸</center>
 
 ## 羧酸的结构与反应
 
-![](/assets/whiteboards/@carboxyl.png){:.display}
+![](/assets/whiteboards/@carboxyl.webp){:.display}
 
 羧基是羧酸的反应中心. 羧基是平面型的，中心的碳$sp^2$杂化，三个键角接近120°. 羧基中碳氧双键$\ce{C=O}$上的$\pi$电子和羟基氧上的一对孤对电子是离域的. 在孤立的羧基中，这4个电子共同形成$\Pi_3^4$. 若羧基与芳环（或者另一个羧基）直接相连，则会形成更大的共轭体系.
 
-![](/assets/whiteboards/5b3a5361.png){:.display}
+![](/assets/whiteboards/5b3a5361.webp){:.display}
 
 **反应**（羧酸的酸性）在羧基中，$\ce{O-H}$键的成键电子偏向氧，该键容易异裂，质子能够从中脱落，因而羧基具有一定的酸性.
 
-![](/assets/whiteboards/ab7f890c.png){:.display}
+![](/assets/whiteboards/ab7f890c.webp){:.display}
 
 **注**：羧基的酸性较强，25℃下水中的$pK_a\approx 4$. 羧基中的羟基和醇羟基大不一样，羰基的存在使得羧羟基的$\ce{O-H}$键更加脆弱.
 
@@ -41,15 +41,15 @@ blah blah...
 
 **例子**：乙酸钠$\ce{CH3CO2Na}$和碘甲烷$\ce{CH3I}$反应.
 
-![](/assets/whiteboards/79bdd0a2.png){:.display}
+![](/assets/whiteboards/79bdd0a2.webp){:.display}
 
 **例子**：乙酸$\ce{CH3CO2H}$和重氮甲烷$\ce{CH2N2}$反应.
 
-![](/assets/whiteboards/bd67c89f.png){:.display}
+![](/assets/whiteboards/bd67c89f.webp){:.display}
 
 **例子**：乙酸和2-甲基丙烯$\ce{H2C=C(CH3)2}$反应.
 
-![](/assets/whiteboards/4a5d4c82.png){:.display}
+![](/assets/whiteboards/4a5d4c82.webp){:.display}
 
 上述的三个例子运用了羧酸根的亲核性，反应生成了酯.
 
@@ -67,7 +67,7 @@ blah blah...
 
 **反应**（羧酸和氨反应）$\ce{NH3}$中的N能作为亲核试剂进攻羧基中的碳，机理如下
 
-![](/assets/whiteboards/9de4c81e.png){:.display}
+![](/assets/whiteboards/9de4c81e.webp){:.display}
 
 反应中，氨的氮进攻羧基碳，经过一种氮先加成，再质子转移，消除一分子水的“加成-消除”机理生成了酰胺.
 
@@ -86,14 +86,14 @@ blah blah...
 **反应**（酯化反应）羧基和醇羟基在酸催化下脱一分子水缩合形成酯基的反应称酯化反应. 酯化反应可以按三种不同的机理进行
 1. 加成-消除机理
 
-	![](/assets/whiteboards/0ab7f6aa.png){:.display}
+	![](/assets/whiteboards/0ab7f6aa.webp){:.display}
 
 	羧酸和一级、二级醇发生酯化反应时绝大多数属于这个机理. 醇亲核加成到质子化的羧基上的这一步是整个反应的决速步，$\ce{R}$及$\ce{R\'}$的空间位阻都会影响该步的速度，位阻越小，速度越快.
 2. 碳正离子机理
 
 	当醇的空间位阻太大时，醇羟基氧难以加成到羧基碳上，加成-消除机理难以进行. 这时如果参与反应的醇容易形成碳正离子，那么反应便会按碳正离子机理进行，羧酸和三级醇的酯化就属于这个机理.
 
-	![](/assets/whiteboards/2c746583.png){:.display}
+	![](/assets/whiteboards/2c746583.webp){:.display}
 3. 酰基正离子机理
 
 	TODO
@@ -141,7 +141,7 @@ HVZ反应有很大的使用价值，它能在羧基的$\alpha$碳上引入Cl或B
 
 	$\beta$-酮酸在温和的加热条件下能以环状过渡态机理脱羧.
 
-	![](/assets/whiteboards/bd4635f1.png){:.display}
+	![](/assets/whiteboards/bd4635f1.webp){:.display}
 
 	一些不是$\beta$-酮酸的物质也能以同样的机理脱羧，例如丙二酸$\ce{HO2CCH2CO2H}$、$\beta$位有卤素的羧酸钠盐（为什么？）. 一些$\beta$-酮酸却没有办法以环状过渡态机理脱羧，例如$\chemfig{TODO}$.（为什么？）
 2. 负离子机理

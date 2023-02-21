@@ -11,7 +11,7 @@ blah blah...
 
 **物质**（氨基酸）同时有氨基$\ce{-NH2}$和羧基$\ce{-COOH}$的有机物称氨基酸. 若一氨基酸中羧基的$\alpha$碳是饱和碳且连着氨基和至少一个氢原子，则称该氨基酸为$\alpha$-氨基酸.
 
-![](/assets/whiteboards/@alpha-aa.png){:.display}
+![](/assets/whiteboards/@alpha-aa.webp){:.display}
 <center><small>$\alpha$-氨基酸的结构通式</small></center>
 
 **注**：$\alpha$-氨基酸的结构中心是四面体的$\alpha$碳，它连接着一个氨基、一个羧基、一个氢和一个可变的基团，这个基团叫$\alpha$-氨基酸的残基，也叫侧链，简称R基.
@@ -24,7 +24,7 @@ blah blah...
 
 **例子**：脯氨酸，一种$\alpha$-亚氨基酸
 
-![](/assets/whiteboards/@pro.png){:.display}
+![](/assets/whiteboards/@pro.webp){:.display}
 
 **物质**（蛋白质氨基酸）蛋白质氨基酸是能被tRNA识别、结合、并在转录过程中参与形成肽链的氨基酸或亚氨基酸. 蛋白质氨基酸一共有22种，人体含有其中的21种，不含有的是吡咯赖氨酸，目前吡咯赖氨酸只在产甲烷菌中有发现.
 
@@ -36,21 +36,21 @@ blah blah...
 
 |名称|缩写|简写|结构|
 |---|---|---|---|
-|甘氨酸|Gly|G|![](/assets/whiteboards/@gly.png)|
-|丙氨酸|Ala|A|![](/assets/whiteboards/@ala.png)|
-|缬氨酸|Val|V|![](/assets/whiteboards/@val.png)|
-|亮氨酸|Leu|L|![](/assets/whiteboards/@leu.png)|
-|异亮氨酸|Ile|I|![](/assets/whiteboards/@ile.png)|
-|苯丙氨酸|Phe|F|![](/assets/whiteboards/@phe.png)|
-|甲硫氨酸（蛋氨酸）|Met|M|![](/assets/whiteboards/@met.png)|
-|脯氨酸|Pro|P|![](/assets/whiteboards/@pro.png)|
-|色氨酸|Trp|W|![](/assets/whiteboards/@trp.png)|
-|丝氨酸|Ser|S|![](/assets/whiteboards/@ser.png)|
-|苏氨酸|Thr|T|![](/assets/whiteboards/@thr.png)|
-|天冬酰胺|Asn|N|![](/assets/whiteboards/@asn.png)|
-|谷氨酰胺|Gln|Q|![](/assets/whiteboards/@gln.png)|
-|酪氨酸|Tyr|Y|![](/assets/whiteboards/@tyr.png)|
-|半胱氨酸|Cys|C|![](/assets/whiteboards/@cys.png)|
+|甘氨酸|Gly|G|![](/assets/whiteboards/@gly.webp)|
+|丙氨酸|Ala|A|![](/assets/whiteboards/@ala.webp)|
+|缬氨酸|Val|V|![](/assets/whiteboards/@val.webp)|
+|亮氨酸|Leu|L|![](/assets/whiteboards/@leu.webp)|
+|异亮氨酸|Ile|I|![](/assets/whiteboards/@ile.webp)|
+|苯丙氨酸|Phe|F|![](/assets/whiteboards/@phe.webp)|
+|甲硫氨酸（蛋氨酸）|Met|M|![](/assets/whiteboards/@met.webp)|
+|脯氨酸|Pro|P|![](/assets/whiteboards/@pro.webp)|
+|色氨酸|Trp|W|![](/assets/whiteboards/@trp.webp)|
+|丝氨酸|Ser|S|![](/assets/whiteboards/@ser.webp)|
+|苏氨酸|Thr|T|![](/assets/whiteboards/@thr.webp)|
+|天冬酰胺|Asn|N|![](/assets/whiteboards/@asn.webp)|
+|谷氨酰胺|Gln|Q|![](/assets/whiteboards/@gln.webp)|
+|酪氨酸|Tyr|Y|![](/assets/whiteboards/@tyr.webp)|
+|半胱氨酸|Cys|C|![](/assets/whiteboards/@cys.webp)|
 
 TODO
 
@@ -60,7 +60,7 @@ TODO
 
 **定义**（$\alpha$-氨基酸与$\alpha$-亚氨基酸的L、D构型）将分子中$\ce{H-C-N}$形成的三角形平面平行桌面摆放，且让H指向自己，N远离自己. 如果羧基$\ce{-CO2H}$在三角形平面之上，则称该$\alpha$-氨基酸（或$\alpha$-亚氨基酸）是L构型的，反之则称为D构型的.
 
-![](/assets/whiteboards/2405ad20.png){:.display}
+![](/assets/whiteboards/2405ad20.webp){:.display}
 <center><small>L构型（左）与D构型（右）</small></center>
 
 **注**：甘氨酸不具有手性，可以认为即是L构型又是D构型.
