@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/menus-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/csshake@1.7.0/dist/csshake-hard.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>MemAA | crow02531’s blog</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="MemAA" />
+<meta name="author" content="crow02531" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="crow02531’s blog" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="MemAA" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"crow02531"},"headline":"MemAA","url":"/widgets/memaa/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+    <div class="showcase-wrapper">
+  <div>
+    <div class="showcase-banner" style="background-image: url(/assets/screenshots/2020-02-28_17.46.02.png);">
+      <div class="banner-title">
+        <a href="/">crow02531's blog</a>
+      </div>
+    </div>
+
+    <div class="post-content">
+      <article class="post" style="margin-bottom: 0;">
+        <h1 class="post-title">MemAA</h1>
+        
+          <div class="post-meta">v0.0.1</div>
+        
+
+        <div class="memaa">
+    <!-- <div class="memaa-left">«</div> -->
+    <div>
+        <div id="question"></div>
+        <ul class="memaa-options">
+            <li><a id="opt0" href="javascript:void(0)" onclick="choose(0)"></a></li>
+            <li><a id="opt1" href="javascript:void(0)" onclick="choose(1)"></a></li>
+            <li><a id="opt2" href="javascript:void(0)" onclick="choose(2)"></a></li>
+            <li><a id="opt3" href="javascript:void(0)" onclick="choose(3)"></a></li>
+        </ul>
+    </div>
+    <div class="memaa-right" onclick="nextQuestion()"><span id="next">»</span></div>
+</div>
+
+<script src="/assets/js/memaa.js"></script>
+<script>
+    const memaa = new MemAA("/assets/whiteboards/@?.png")
+    const memaa_element = document.getElementsByClassName("memaa")[0]
+    const next_element = document.getElementById("next")
+    const question_element = document.getElementById("question")
+    const opt_elements = [
+        document.getElementById("opt0"),
+        document.getElementById("opt1"),
+        document.getElementById("opt2"),
+        document.getElementById("opt3")
+    ]
+
+    var chosen = false
+
+    function nextQuestion() {
+        memaa.next()
+
+        question_element.innerHTML = memaa.question()
+        for(let i = 0; i < 4; ++i) {
+            opt_elements[i].innerHTML = memaa.options()[i]
+            opt_elements[i].className = ""
+        }
+
+        next_element.classList.remove("memaa-hshake")
+        memaa_element.classList.remove("memaa-fade-in")
+        memaa_element.offsetWidth = memaa_element.offsetWidth
+        memaa_element.classList.add("memaa-fade-in")
+
+        chosen = false
+    }
+
+    function choose(opt) {
+        if(chosen) return
+        chosen = true
+
+        opt_elements[memaa.answer()].classList.add("memaa-true")
+        if(opt != memaa.answer()) {
+            opt_elements[opt].classList.add("memaa-false")
+            next_element.classList.add("memaa-hshake")
+        } else nextQuestion()
+    }
+
+    nextQuestion()
+</script>
+      </article>
+    </div>
+  </div>
+
+  <div style="margin: 0 auto; padding: 0 1em;">
+    <footer>
+  
+  
+  
+  <small>
+    &copy; 2021&nbsp;-&nbsp;2023 crow02531. All rights reserved. Powered by <a href="https://vercel.com/">Vercel</a> | <a href="https://github.com/">Github</a> | <a href="https://jekyllrb.com/">Jekyll</a> | <a href="https://giscus.app/">gisucs</a>.
+  </small>
+</footer>
+  </div>
+</div>
+  </body>
+</html>

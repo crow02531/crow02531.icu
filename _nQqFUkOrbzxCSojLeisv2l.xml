@@ -1,0 +1,1 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>=</mo><msub><mo>⋃</mo><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></msub><msub><mi>V</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">U=\bigcup_{i\in I} V_i</annotation></semantics></math>
