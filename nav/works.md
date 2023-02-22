@@ -25,3 +25,9 @@ permalink: /nav/works/
 20种常见蛋白质氨基酸的百词斩。Web应用。
 
 [项目链接](/widgets/memaa/)
+
+## 2023-01-17-arknights
+
+姑且是第一张比较完善的临摹作品。纸绘。
+
+[项目链接](/assets/paintings/2023-01-17-arknights.webp)
