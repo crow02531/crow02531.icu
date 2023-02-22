@@ -14,7 +14,7 @@ blah blah...
 ![](/assets/whiteboards/@alpha-aa.webp){:.display}
 <center><small>$\alpha$-氨基酸的结构通式</small></center>
 
-**注**：$\alpha$-氨基酸的结构中心是四面体的$\alpha$碳，它连接着一个氨基、一个羧基、一个氢和一个可变的基团，这个基团叫$\alpha$-氨基酸的残基，也叫侧链，简称R基.
+**注**：$\alpha$-氨基酸的结构中心是四面体的$\alpha$碳，它连接着一个氨基、一个羧基、一个氢和一个可变的基团，这个基团叫$\alpha$-氨基酸的侧链，简称R基.
 
 **注**：R基可以是H，这时候就是甘氨酸$\ce{H2N-CH2-COOH}$.
 
@@ -36,7 +36,6 @@ blah blah...
 
 |名称|缩写|简写|结构|
 |---|---|---|---|
-|甘氨酸|Gly|G|![](/assets/whiteboards/@gly.webp)|
 |丙氨酸|Ala|A|![](/assets/whiteboards/@ala.webp)|
 |缬氨酸|Val|V|![](/assets/whiteboards/@val.webp)|
 |亮氨酸|Leu|L|![](/assets/whiteboards/@leu.webp)|
@@ -45,14 +44,25 @@ blah blah...
 |甲硫氨酸（蛋氨酸）|Met|M|![](/assets/whiteboards/@met.webp)|
 |脯氨酸|Pro|P|![](/assets/whiteboards/@pro.webp)|
 |色氨酸|Trp|W|![](/assets/whiteboards/@trp.webp)|
+|甘氨酸|Gly|G|![](/assets/whiteboards/@gly.webp)|
 |丝氨酸|Ser|S|![](/assets/whiteboards/@ser.webp)|
 |苏氨酸|Thr|T|![](/assets/whiteboards/@thr.webp)|
 |天冬酰胺|Asn|N|![](/assets/whiteboards/@asn.webp)|
 |谷氨酰胺|Gln|Q|![](/assets/whiteboards/@gln.webp)|
 |酪氨酸|Tyr|Y|![](/assets/whiteboards/@tyr.webp)|
 |半胱氨酸|Cys|C|![](/assets/whiteboards/@cys.webp)|
+|天冬氨酸|Asp|D|![](/assets/whiteboards/@asp.webp)|
+|谷氨酸|Glu|E|![](/assets/whiteboards/@glu.webp)|
+|组氨酸|His|H|![](/assets/whiteboards/@his.webp)|
+|赖氨酸|Lys|K|![](/assets/whiteboards/@lys.webp)|
+|精氨酸|Arg|R|![](/assets/whiteboards/@arg.webp)|
+|硒代半胱氨酸|Sec|U|![](/assets/whiteboards/@sec.webp)|
+|吡咯赖氨酸|Pyl|O|![](/assets/whiteboards/@pyl.webp)|
 
-TODO
+**注**：由于第21种（硒代半胱氨酸）和第22种（吡咯赖氨酸）蛋白质氨基酸极不常见，通常将前20种蛋白质氨基酸称常见蛋白质氨基酸.
+
+> **Tip**
+> 这里有一个类似百词斩的20种常见蛋白质氨基酸的Web应用[MemAA](/widgets/memaa/).
 
 读者需要特别注意上面这22种蛋白质氨基酸的构型，如果把$\ce{H-C-N}$形成的三角形平面平行桌面摆放，并且让H指向自己，你会发现羧基$\ce{-CO2H}$永远在三角形平面之上. 此外，这22种蛋白质氨基酸中只有异亮氨酸、苏氨酸、吡咯赖氨酸具有除开$\alpha$碳之外的手性碳，只有甘氨酸没有手性. 蛋白质氨基酸中的每一种都是一个确定的物质，哪怕构造一样，但换一个构型，就不再是蛋白质氨基酸了.
 
@@ -82,3 +92,17 @@ TODO
 从上面这个例子可以看出，氨基酸（或亚氨基酸）在水中的行为很复杂，这还只是丙氨酸而已，溶解在水中就能有4种形式. 倘若是一个R基带羧基或氨基的$\alpha$-氨基酸，例如天冬氨酸，那会有多少种形式？这些不同形式各自占的比例又和pH密切相关. 如果pH很高，那么由于强碱性，溶液中的氨基酸（或亚氨基酸）大多是缺质子形式，分子整体带负电；反之诺pH很低，那么由于强酸性，溶液中的氨基酸（或亚氨基酸）大多是多质子形式，分子整体带正电.
 
 **定义**（等电点）某一氨基酸（或亚氨基酸）A溶于水中. 若此时的pH恰好使得A的电中性形式的浓度达到最大，则称该pH为A的等电点，记为pI.
+
+**注**：pI由氨基酸（或亚氨基酸）的种类和温度决定. 不同的氨基酸（或亚氨基酸）有不同的pI，同一氨基酸（或亚氨基酸）在不同的温度下pI也会不同.
+
+**例子**：25℃下苯丙氨酸的pI=5.48，这意味着在中性（pH=7）环境下，大多数苯丙氨酸都以缺质子形式存在（为什么？）. 25℃下赖氨酸的pI=9.74，中性环境下大多数赖氨酸以多质子形式存在（为什么？）.
+
+---
+
+**反应**（$\alpha$-氨基酸和茚三酮反应）
+
+**反应**（$\alpha$-亚氨基酸和茚三酮反应）
+
+**反应**（氨基和FNDB反应）
+
+**反应**（氨基和PITC反应）
