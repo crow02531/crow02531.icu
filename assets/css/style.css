@@ -608,9 +608,6 @@ footer {
   border: 1px solid #dee2e6;
   border-radius: 0.5em;
 }
-.memaa-options li a:hover {
-  border-color: #1c7ed6;
-}
 
 .memaa-true {
   border-color: #40c057 !important;
@@ -618,7 +615,7 @@ footer {
 
 .memaa-false {
   border-color: #fa5252 !important;
-  animation: blink ease 0.5s 2;
+  animation: blink ease 0.4s 2;
 }
 
 .memaa {
@@ -626,17 +623,10 @@ footer {
   min-height: max-content;
 }
 
-.memaa-left, .memaa-right {
+.memaa-right {
   display: flex;
   align-items: center;
   padding: 0 0.3em;
-}
-.memaa-left:hover, .memaa-right:hover {
-  cursor: pointer;
-  background-color: #f1f3f5;
-}
-
-.memaa-right {
   margin-left: auto;
 }
 
@@ -662,7 +652,7 @@ footer {
     opacity: 1;
   }
   50% {
-    opacity: 0.6;
+    opacity: 0.4;
   }
   100% {
     opacity: 1;
@@ -674,6 +664,15 @@ footer {
   }
   75% {
     translate: 0.2em;
+  }
+}
+@media (any-hover: hover) {
+  .memaa-options > li > a:hover {
+    border-color: #1c7ed6;
+  }
+  .memaa-right:hover {
+    cursor: pointer;
+    background-color: #f1f3f5;
   }
 }
 
