@@ -14,10 +14,6 @@
             padding: .1em .5em;
             border: 1px solid $border-color;
             border-radius: .5em;
-
-            &:hover {
-                border-color: $link-hover-color;
-            }
         }
     }
 }
@@ -28,7 +24,7 @@
 
 .memaa-false {
     border-color: $red !important;
-    animation: blink ease .5s 2;
+    animation: blink ease .4s 2;
 }
 
 .memaa {
@@ -36,24 +32,11 @@
     min-height: max-content;
 }
 
-%memaa-side {
+.memaa-right {
     display: flex;
     align-items: center;
     padding: 0 .3em;
-
-    &:hover {
-        cursor: pointer;
-        background-color: $gray-100;
-    }
-}
-
-.memaa-right {
-    @extend %memaa-side;
     margin-left: auto;
-}
-
-.memaa-left {
-    @extend %memaa-side;
 }
 
 .memaa-fade-in {
@@ -81,7 +64,7 @@
     }
 
     50% {
-        opacity: .6;
+        opacity: .4;
     }
 
     100% {
@@ -96,5 +79,16 @@
 
     75% {
         translate: 0.2em;
+    }
+}
+
+@media (any-hover: hover) {
+    .memaa-options>li>a:hover {
+        border-color: $link-hover-color;
+    }
+
+    .memaa-right:hover {
+        cursor: pointer;
+        background-color: $gray-100;
     }
 }
