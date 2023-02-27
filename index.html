@@ -13,7 +13,7 @@ layout: page
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
     </div>
 
-    <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
+    <p class="line-clamp">{{ post.excerpt | strip_html }}</p>
   </section>
 {% endfor %}
 
