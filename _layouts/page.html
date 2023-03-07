@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="page-sidebar" style="background-image: url({{ site.sidebar_image }});">
+<div class="page-sidebar shake-trigger" style="background-image: url({{ site.sidebar_image }});">
   <header class="masthead">
     {% if site.avatar %}
       <img src="{{ site.avatar }}" class="masthead-avatar" title="{{ site.author }}">
@@ -13,7 +13,7 @@ layout: default
     </div>
 
     <div class="masthead-tagline">
-      <small id="splash" class="shake-hard"></small>
+      <small id="splash" class="shake-chunk"></small>
       <script src="/assets/js/splash.js"></script>
       <script>document.getElementById('splash').innerHTML = Splash.pickSplash()</script>
     </div>
